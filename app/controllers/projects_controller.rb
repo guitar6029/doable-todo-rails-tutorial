@@ -8,4 +8,8 @@ class ProjectsController < ApplicationController
     # params = { "id" => "1"}
     @project = Project.find(params[:id])
   end
+
+  def new
+    @project = Project.new
+  end
 end
